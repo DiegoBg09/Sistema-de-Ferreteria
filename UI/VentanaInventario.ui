@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>874</width>
+    <height>532</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Gestion de Inventario</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QWidget" name="widget_3" native="true">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 213, 79);</string>
+      </property>
+      <widget class="QLabel" name="label_11">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>20</y>
+         <width>531</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial Black</family>
+         <pointsize>28</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(43, 82, 151);
+</string>
+       </property>
+       <property name="text">
+        <string>CONSULTAR INVENTARIO</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="groupBox">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>90</y>
+         <width>291</width>
+         <height>371</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Franklin Gothic Demi Cond</family>
+         <pointsize>20</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QGroupBox {
+color:  rgb(42, 53, 117);
+border: 3px solid  rgb(42, 53, 117)rgb(255, 213, 79);
+border-radius: 15px;
+}
+
+QGroupBox::title {
+background-color:  rgb(42, 53, 117);
+color: rgb(255, 255, 255);
+border-top-left-radius: 9px;
+border-top-right-radius: 9px;
+padding: 2px 26px;
+}
+
+</string>
+       </property>
+       <property name="title">
+        <string>DATOS DEL PRODUCTO</string>
+       </property>
+       <widget class="QLabel" name="lblCodigo">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>50</y>
+          <width>71</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Franklin Gothic Demi Cond</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(42, 53, 117);</string>
+        </property>
+        <property name="text">
+         <string>Código:</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="txtCodigo">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>80</y>
+          <width>251</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Microsoft PhagsPa</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_13">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>110</y>
+          <width>71</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Franklin Gothic Demi Cond</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(42, 53, 117);</string>
+        </property>
+        <property name="text">
+         <string>Artículo:</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="txtArticulo">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>130</y>
+          <width>251</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Microsoft PhagsPa</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_14">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>160</y>
+          <width>101</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Franklin Gothic Demi Cond</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(42, 53, 117);</string>
+        </property>
+        <property name="text">
+         <string>Descripción:</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_15">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>250</y>
+          <width>71</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Franklin Gothic Demi Cond</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(42, 53, 117);</string>
+        </property>
+        <property name="text">
+         <string>Precio:</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="txtPrecio">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>270</y>
+          <width>251</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Microsoft PhagsPa</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btnBuscar">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>310</y>
+          <width>121</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Franklin Gothic Demi Cond</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color: rgb(43, 82, 151);
+color: rgb(255, 255, 255);
+border-style: solid;
+border-width: 1px;
+border-color: black;
+border-radius: 10px;
+}
+
+QPushButton:hover{
+background-color: rgb(255, 0, 0);
+}</string>
+        </property>
+        <property name="text">
+         <string>BUSCAR</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../Images/gestion-inventario/lupa.png</normaloff>../Images/gestion-inventario/lupa.png</iconset>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btnRegresar">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>310</y>
+          <width>121</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Franklin Gothic Demi Cond</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color: rgb(43, 82, 151);
+color: rgb(255, 255, 255);
+border-style: solid;
+border-width: 1px;
+border-color: black;
+border-radius: 10px;
+}
+
+QPushButton:hover{
+background-color: rgb(255, 0, 0);
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>REGRESAR</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../Images/gestion-inventario/regresar.png</normaloff>../Images/gestion-inventario/regresar.png</iconset>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="txtDescripcion">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>180</y>
+          <width>251</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Microsoft PhagsPa</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+       </widget>
+       <zorder>lblCodigo</zorder>
+       <zorder>label_13</zorder>
+       <zorder>label_14</zorder>
+       <zorder>label_15</zorder>
+       <zorder>txtCodigo</zorder>
+       <zorder>txtArticulo</zorder>
+       <zorder>txtPrecio</zorder>
+       <zorder>btnBuscar</zorder>
+       <zorder>btnRegresar</zorder>
+       <zorder>txtDescripcion</zorder>
+      </widget>
+      <widget class="QTableWidget" name="tblInventario">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>130</y>
+         <width>531</width>
+         <height>331</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Microsoft PhagsPa</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(43, 82, 151);</string>
+       </property>
+       <attribute name="horizontalHeaderStretchLastSection">
+        <bool>true</bool>
+       </attribute>
+       <column>
+        <property name="text">
+         <string>CÓDIGO</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>ARTÍCULO</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>DESCRIPCIÓN</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>PRECIO</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>STOCK</string>
+        </property>
+       </column>
+      </widget>
+      <widget class="QLabel" name="label_16">
+       <property name="geometry">
+        <rect>
+         <x>660</x>
+         <y>10</y>
+         <width>101</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../Images/gestion-inventario/inventario.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_17">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>100</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Franklin Gothic Demi Cond</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(42, 53, 117);</string>
+       </property>
+       <property name="text">
+        <string>Productos:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnAgregar">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>475</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Franklin Gothic Demi Cond</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+background-color: rgb(43, 82, 151);
+color: rgb(255, 255, 255);
+border-style: solid;
+border-width: 1px;
+border-color: black;
+border-radius: 10px;
+}
+
+QPushButton:hover{
+background-color: rgb(255, 0, 0);
+}</string>
+       </property>
+       <property name="text">
+        <string>AGREGAR</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>Img/lupa.png</normaloff>Img/lupa.png</iconset>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnAlerta">
+       <property name="geometry">
+        <rect>
+         <x>745</x>
+         <y>475</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Franklin Gothic Demi Cond</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+background-color: rgb(43, 82, 151);
+color: rgb(255, 255, 255);
+border-style: solid;
+border-width: 1px;
+border-color: black;
+border-radius: 10px;
+}
+
+QPushButton:hover{
+background-color: rgb(255, 0, 0);
+}</string>
+       </property>
+       <property name="text">
+        <string>ALERTA STOCK</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>Img/lupa.png</normaloff>Img/lupa.png</iconset>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnEditar">
+       <property name="geometry">
+        <rect>
+         <x>475</x>
+         <y>475</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Franklin Gothic Demi Cond</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+background-color: rgb(43, 82, 151);
+color: rgb(255, 255, 255);
+border-style: solid;
+border-width: 1px;
+border-color: black;
+border-radius: 10px;
+}
+
+QPushButton:hover{
+background-color: rgb(255, 0, 0);
+}</string>
+       </property>
+       <property name="text">
+        <string>EDITAR</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>Img/lupa.png</normaloff>Img/lupa.png</iconset>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnEliminar">
+       <property name="geometry">
+        <rect>
+         <x>610</x>
+         <y>475</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Franklin Gothic Demi Cond</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+background-color: rgb(43, 82, 151);
+color: rgb(255, 255, 255);
+border-style: solid;
+border-width: 1px;
+border-color: black;
+border-radius: 10px;
+}
+
+QPushButton:hover{
+background-color: rgb(255, 0, 0);
+}</string>
+       </property>
+       <property name="text">
+        <string>ELIMINAR</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>Img/lupa.png</normaloff>Img/lupa.png</iconset>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnGrabar">
+       <property name="geometry">
+        <rect>
+         <x>475</x>
+         <y>475</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Franklin Gothic Demi Cond</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+background-color: rgb(43, 82, 151);
+color: rgb(255, 255, 255);
+border-style: solid;
+border-width: 1px;
+border-color: black;
+border-radius: 10px;
+}
+
+QPushButton:hover{
+background-color: rgb(255, 0, 0);
+}</string>
+       </property>
+       <property name="text">
+        <string>GRABAR</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>Img/lupa.png</normaloff>Img/lupa.png</iconset>
+       </property>
+      </widget>
+      <zorder>btnGrabar</zorder>
+      <zorder>label_11</zorder>
+      <zorder>label_16</zorder>
+      <zorder>label_17</zorder>
+      <zorder>groupBox</zorder>
+      <zorder>tblInventario</zorder>
+      <zorder>btnAgregar</zorder>
+      <zorder>btnAlerta</zorder>
+      <zorder>btnEditar</zorder>
+      <zorder>btnEliminar</zorder>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
